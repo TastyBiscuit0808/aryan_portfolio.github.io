@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Personal Portfolio Website</title>
+    <!----CSS link----->
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }       
+        a {
+            text-decoration: none;
+        }
+        .hero {
+            width: 100%;
+            height: 100vh;
+            background-image: url("https://github.com/TastyBiscuit0808/Portfolio_Website/blob/master/contact_back.jpg?raw=true");
+            background-size: cover;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 100px;
+        }
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 10px 20px;
+        }
+        nav ul li a {
+            color: #1d1d24;
+            position: relative;
+            padding: 5px 0;
+        }
+        nav ul li a:hover {
+            color: #fd4766;
+        }
+        nav ul li a:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: #fd4766;
+            transition: 0.3s;
+            bottom: 0;
+        }
+        nav ul li a:hover:after {
+            width: 100%;
+        }
+        .btn {
+            color: #fff;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 16px 40px;
+            border-radius: 500px;
+            display: inline-block;
+            font-weight: 500;
+            transition: all 0.4s ease-in-out;
+            background-size: 152% 100%;
+            background: #fd4766;
+            border: 2px solid #fd4766;
+        }
+        .btn:hover {
+            background: transparent;
+            border-color: #fd4766;
+            color: #fd4766;
+        }
+        .content {
+            position: absolute;
+            top: 22%;
+            left: 8%;
+        }
+        .imagepos{
+            position: absolute;
+            top: -120%;
+            left: 160%;
+            width: 40px;
+            height: 40px;
+
+        }
+        .maincontnet{
+            height: 100px;
+            width: 600px;
+            position: absolute;
+            top:45%;
+            left: 27%;
+            /* background-color:#fd4766; */
+        }
+        .content .title {
+            color: #0a0a0a;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            display: inline-block;
+            margin-bottom: 20px;
+            background: linear-gradient(
+                120deg,
+                #1c99fe 20.69%,
+                #7644ff 50.19%,
+            #fd4766 79.69%
+            );
+            /* -webkit-background-clip: text; */
+            -webkit-text-fill-color: transparent;
+        }
+        .content h1 {
+            color: #1f1f25;
+            font-size: 75px;
+            font-weight: 900;
+            line-height: 90px;
+            text-transform: inherit;
+            width: 70%;
+        }
+        .content h1 span {
+            color: #fd4766;
+        }
+        .content p {
+            width: 55%;
+            color: #202020;
+            margin-top: 25px;
+            margin-bottom: 30px;
+        }
+        .btstyle{
+            width: 70px;
+            height: 70px;
+        }
+        .contactstyle{
+            position: absolute;
+            width: 400px;
+            height: 100px;
+            /* background-color:white; */
+            left: 535px;
+            top: 250px;
+        }
+        .contactstyle2{
+            position: absolute;
+            width: 350x;
+            height: 50pxx;
+            left:505px;
+            top:350px;
+            background-color: grey;
+        }
+        .resumestype{
+            position:absolute;
+            width: 200px;
+            height: 50px;
+            left:550px;
+            top:170px;
+            background-color: grey;
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+        <nav>
+          <ul>
+            <li><a href="file:///C:/Users/Aryan%20Wadhwa/OneDrive/Desktop/Portfolio_Website/Frontend.html" style="color: black; font-size: medium; font-weight: bold;">Home</a></li>
+            <li><a href="file:///C:/Users/Aryan%20Wadhwa/OneDrive/Desktop/Portfolio_Website/contact.html" style="color: black; font-size: medium; font-weight: bold;">Contact</a></li>
+          </ul>
+        </nav>
+        <div>
+            
+        </div>
+        <div class="contactstyle">
+            <a href="https://www.instagram.com/aryanwadhwa05/"><img src="https://github.com/TastyBiscuit0808/Portfolio_Website/blob/master/insta.png?raw=true" alt="Instagram Logo Circle@pngkey.com" style="width: 70px;height: 70px;"></a>
+            <a href="https://www.linkedin.com/in/aryan-wadhwa-4a6989228/"><img src="https://github.com/TastyBiscuit0808/Portfolio_Website/blob/master/linkedin.png?raw=true" alt="Instagram Logo Circle@pngkey.com" style="width: 70px;height: 70px;"></a>
+            <a href="https://github.com/TastyBiscuit0808"><img src="https://github.com/TastyBiscuit0808/Portfolio_Website/blob/master/github.png?raw=true" alt="Instagram Logo Circle@pngkey.com" style="width: 70px;height: 70px;"></a>
+        </div>
+        <div class="contactstyle2">
+            <p style="color: white; font-weight: bold; text-align: center;font-size: large; font-family: 'Times New Roman', Times, serif;">Email: aryanwadhwa05@gmail.com</p>
+            <p style="color: rgba(255, 255, 255, 0.87); font-weight: bold;text-align: center; font-size: large;font-family: 'Times New Roman', Times, serif;">Ph No: +91 6366023671</p>
+        </div>
+        <div class="resumestype">
+            <a href="https://1drv.ms/b/s!AnqqILqnBy73jogZPG98pegGiWINLg?e=V6fLgg" style="color: white; font-family: 'Times New Roman', Times, serif; font-size: large;font-weight: bold;">Click here to download resume</a>
+        </div>
+    </div>
+  </body>
